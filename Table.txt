@@ -1,0 +1,42 @@
+CREATE TABLE Trainer_Info
+(
+TrainerID varchar(255),
+Saluation varchar(255),
+Trainer_Name varchar(255),
+Trainer_Location varchar(255),
+Trainer_Track varchar(255),
+Trainer_Qualification varchar(255),
+Trainer_Experience varchar(255),
+Trainer_Email varchar(255),
+Trainer_Password varchar(255)
+);
+CREATE TABLE Associate_Info
+(
+AssociateID varchar(255),
+Saluation varchar(255),
+Associate_Name varchar(255),
+Associate_Location varchar(255),
+Associate_Track varchar(255),
+Associate_Qualification varchar(255),
+Trainer_Experience varchar(255),
+Associate_Email varchar(255),
+Associate_Password varchar(255)
+);
+CREATE TABLE Questions
+(
+QuestionID varchar(250),
+ModuleID varchar(250),
+Question_test varchar(250)
+);
+CREATE TABLE Associate_Feedback
+(
+AssociateID varchar(255),
+QuestionID varchar(255),
+ModuleID varchar(255),
+Associate_Rating varchar(255)
+);
+CREATE TABLE LOGIN_Details
+(
+User_ID varchar(250),
+User_password int NOT NULL,
+);
